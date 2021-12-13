@@ -1,0 +1,93 @@
+body {
+background-image: url('/static/img/main-bg.jpg');
+background-size:cover;
+}
+
+ nav{
+   background: #241A1A;
+   border-radius: 0px 0px 30px 30px;
+
+ }
+ .navbar-dark {
+   color:#FFFEFE;
+ }
+
+.navbar-brand{
+font-size:30px;
+}
+
+.rect1{
+position: absolute;
+width: 672px;
+height: 900px;
+left: 371px;
+top: 189px;
+
+background: rgba(255, 252, 252, 0.81);
+border-radius: 40px;
+}
+
+.rect2{
+position: absolute;
+width: 37%;
+height: 75%;
+left: 450px;
+top: 20%;
+padding: 20px;
+margin:20px;
+background: rgba(255, 252, 252, 0.81);
+border-radius: 40px;
+}
+
+.helptitle{
+  position: absolute;
+width: 90px;
+height: 70px;
+left: 40%;
+top: 5%;
+
+
+font-weight: normal;
+font-size: 36px;
+line-height: 54px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+color: #241A1A;
+
+}
+.helptext{
+  padding: 30px;
+  margin:10px;
+  position: relative;
+  top: 12%;
+  font-size: 16px;
+}
+.btn-dark{
+  background-color: #241A1A;
+  color:white;
+}
+
+.bcontainer{
+  margin-top:12%;
+  margin-left:32%;
+}
+
+.button {
+  background-color: rgba(36, 26, 26, 0.9);
+  border: none;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 28px;
+  margin: 35px;
+}
+.button:hover {
+  background-color:#f5cb22;
+}
+.button1 {border-radius: 32px;}
+.button2 {border-radius: 32px;}

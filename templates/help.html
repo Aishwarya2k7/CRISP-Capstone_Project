@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}
+  Help Page
+{% endblock %}
+
+{% block content %}
+<div class="rect1">
+  <h2 class="helptitle">HELP!</h2>
+  <div class="helptext">
+
+
+  <p>
+    &#10077;<span style="font-size:30px;font-weight:bolder;">T</span>he summarizer outputs a summary from video transcripts which are large usually to save time. User
+  enters a video id along with the number of lines in which you want the summary and the tool gives you a
+  shortened copy for you to read. You will also get a translated summary in the output. This implementation
+  has a German translator. But has future scope in giving the user the option to choose from.&#10078;
+  </p>
+
+  <strong style="font-size:18px;">Steps to Follow :-</strong>
+  <ol>
+  <li>
+    Upload Video:<br />
+
+      &#10003; &nbsp; Option 1: Enter your video id <br>
+      &#10003; &nbsp; Option 2: Upload the video. Just drag & drop, it’s super easy
+
+
+    </li>
+  <li> Number of lines:   Enter the number of lines based upon how long you want the summary to be.</li>
+  <li> Summarization and Translation of Video:
+  Click ‘Submit’ to automatically generate a summary. Then click ‘Translate’ and select your desired
+  language.</li>
+  </ol>
+  <br />
+    <strong style="font-size:18px;">How does it work?</strong>
+    <br />
+    Using natural language processing and machine learning, we produce a summary and its translation for
+    the video transcript given or the video uploaded.The tool has 5 phases:
+    <ol>
+      <li> Audio extraction from the video if video is uploaded and then extract sentences, or direct sentence
+      extraction from the transcript.</li>
+      <li>Identification of the relevance of the words in the text</li>
+      <li> Select sentences with a high number of relevant words and score them (We use Text Rank
+      algorithm).</li>
+      <li> Summarize based on the score obtained</li>
+      <li> Translate into another language</li>
+    </ol>
+
+
+
+  </div>
+  </div>
+{% endblock %}

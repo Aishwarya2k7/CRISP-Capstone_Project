@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}
+  Output Page
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/style2.css">
+<style>
+background-image:none;
+</style>
+<div class="result">
+  <h4>Video : &nbsp;&nbsp;<span>{{messages['videoid']}} </span></h4>
+   <p></p>
+  </div>
+<div class="result">
+  <h4>Number of lines: &nbsp;&nbsp;<span>{{messages['numlines']}} / {{messages['numoflines']}}</span></h4>
+
+  </div>
+  
+
+  <div class="result">
+    <h4>Transcript:</h4>
+      <p>
+        {{messages['transcript']}}
+        </p>
+
+    </div>
+
+    <!-- <div class="result">
+    <h4>Number of lines in transcript:&nbsp;&nbsp;<span>{{messages['numoflines']}}</span></h4>
+
+
+    </div> -->
+
+    <div class="result">
+      <h4>Summarised Sentences:</h4>
+        <p>
+          {% for i in range(messages['numlines']) %}
+            {{messages['rsent'][i][1]}}
+          {% endfor %}
+          </p>
+
+      </div>
+
+      <div class="result">
+      <h4>Translation: &nbsp;[&nbsp;English - {{messages['language']}}&nbsp;] </h4>
+        <p>
+            {{messages['tsent']}}
+	
+          </p>
+
+      </div>
+{% endblock %}

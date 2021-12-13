@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+  Home Page
+{% endblock %}
+
+{% block content %}
+  <div class="rect2">
+    <form method="post"  class="from-entry">
+        {{ form.hidden_tag() }}
+        {{ form.video.label() }}
+        <br>
+        {{ form.video(type="file", placeholder="Video", accept=".mp4") }}
+        <br>
+        <br>
+        {{ form.numlines.label() }}
+        {{ form.numlines(class="form-control",type="number",min="1", placeholder="Number of Lines") }}
+        <br>
+        {{ form.language.label() }}
+        {{ form.language(class="form-control",type="select", placeholder="Choose language") }}
+        <br>
+        {{ form.submit(class="btn btn-lg btn-dark") }}
+    </form>
+
+  </div>
+{% endblock %}
